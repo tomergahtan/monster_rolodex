@@ -27,10 +27,10 @@ function App() {
     
   };
 
-  const onTitleChange = (event) =>{
-    setTitle(event.target.value);
+  // const onTitleChange = (event) =>{
+  //   setTitle(event.target.value);
 
-  }
+  // }
 
 
   useEffect(()=>{
@@ -55,11 +55,7 @@ function App() {
       className = 'monsters-search-box'
       placeholder = 'Search Monster'
     />
-  <SearchBox 
-      onChangeHandler = {onTitleChange}
-      className = 'title-search-box'
-      placeholder = 'set title'
-    />
+
   <Cardlist monsters = {filteredmonsters} />
    </div>)
  }
